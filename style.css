@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Catamaran-Light';
+  src: url('assets/Catamaran-Light.ttf');
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Catamaran-Light;
+  color: white;
+  background-color: #252525;
+  font-size: 40px;
+}
+
+
+
+.content {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button {
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid darkorange;
+  transition: .2s all ease-in-out;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: inset 0px 0px 10px white;
+  margin: 5px;
+  padding: 5px;
+  text-shadow: 0px 0px 40px white;
+  border: 1px solid white;
+  transition: .1s all ease-in-out;
+}
+
+.button:active {
+  cursor: pointer;
+  background-color: darkorange;
+  box-shadow: 0px 0px 40px darkorange;
+  border: 1px solid darkorange;
+  transition: .1s all ease-in-out;
+}
+
+.button.activate {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  background-color: darkorange;
+  box-shadow: 0px 0px 40px darkorange;
+  border: 1px solid darkorange;
+  transition: .1s all ease-in-out;
+}
+
+.button::selection {
+  background-color: rgba(0,0,0,0);
+}
+.button::-moz-selection {
+  background-color: rgba(0,0,0,0);
+}
+.button::-webkit-selection {
+  background-color: rgba(0,0,0,0);
+}
+
+#display {
+  font-size: 40px;
+  word-wrap: break-word;
+  text-align: right;
+  background-color: #151515;
+  min-height: 66px;
+  padding: 10px;
+  border: 1px solid darkorange;
+  grid-column: 1/5;
+}
+
+#zero {
+  grid-column: 1/3;
+}
+
+#equals {
+  grid-column: 1/4;
+}
